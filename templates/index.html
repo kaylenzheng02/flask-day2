@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Meet the dogs</title></head>
+<body>
+  <nav><a href="/">Gallery</a> <a href="/about">About</a></nav>
+<h1>Meet the dogs</h1>
+<p>Two fictional dogs for our design experiment.</p>
+<div class="dogs">
+  {% for dog in dogs %}
+  <section class="card">
+    <span class="dog-icon" aria-hidden="true">🐶</span>
+    <h2>{{ dog["name"] }}</h2>
+    <p>{{ dog["description"] }}</p>
+  </section>
+  {% endfor %}
+</div>
+</body>
+</html>
