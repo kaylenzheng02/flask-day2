@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}Dog gallery{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
 </head>
 <body>
   <header>
@@ -12,8 +13,9 @@
       <a href="{{ url_for('index') }}">Gallery</a>
       <a href="{{ url_for('about') }}">About</a>
     </nav>
+    <button id="theme-button" type="button" aria-pressed="false">Use dark theme</button>
   </header>
   <main>{% block content %}{% endblock %}</main>
-  <footer>A small Flask classroom project</footer>
+  <footer>the dogs ever</footer>
 </body>
 </html>

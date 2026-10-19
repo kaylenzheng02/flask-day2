@@ -1,10 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><title>About the gallery</title></head>
-<body>
-  <nav><a href="/">Gallery</a> <a href="/about">About</a></nav>
+{% extends "base.html" %}
+{% block title %}About the gallery{% endblock %}
+{% block content %}
 <h1>About this gallery</h1>
 <p>Flask renders these pages using a small list of fictional dogs.</p>
 <p>We are learning to share a layout, style it with CSS, and add a JavaScript interaction.</p>
-</body>
-</html>
+{% endblock %}

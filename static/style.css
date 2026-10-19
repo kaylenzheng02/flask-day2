@@ -1,0 +1,81 @@
+body {
+  font-family: system-ui, sans-serif;
+  color: #25243b;
+  background: #f5f2ed;
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+header,
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+.dogs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.dog-icon {
+  font-size: 3rem;
+}
+
+button {
+  font: inherit;
+  color: white;
+  background: #5740a0;
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3d2879;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #c77812;
+  outline-offset: 3px;
+}
+
+footer {
+  margin-top: 32px;
+}
+
+.dark {
+  background: #232134;
+  color: #f7f3ff;
+}
+
+.dark .card {
+  background: #343047;
+}
+
+@media (max-width: 600px) {
+  .dogs {
+    grid-template-columns: 1fr;
+  }
+}
