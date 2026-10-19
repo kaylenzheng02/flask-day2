@@ -1,7 +1,7 @@
 body {
   font-family: system-ui, sans-serif;
   color: #25243b;
-  background: #f5f2ed;
+  background: #edf0f5;
   max-width: 900px;
   margin: 32px auto;
   padding: 0 20px;
@@ -44,7 +44,7 @@ h1 {
 button {
   font: inherit;
   color: white;
-  background: #5740a0;
+  background: #93a040;
   border: 0;
   padding: 10px 16px;
   border-radius: 8px;
@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-  background: #3d2879;
+  background: #575f26;
 }
 
 button:focus-visible,
@@ -66,12 +66,12 @@ footer {
 }
 
 .dark {
-  background: #232134;
+  background: #0e4046;
   color: #f7f3ff;
 }
 
 .dark .card {
-  background: #343047;
+  background: #3a585c;
 }
 
 @media (max-width: 600px) {
